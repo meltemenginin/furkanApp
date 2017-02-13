@@ -1,0 +1,6 @@
+{
+    "env": {
+       
+        "MONGO_URL": "mongodb://localhost:3000/meteor"
+    }
+}
