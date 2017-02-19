@@ -1,0 +1,23 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>ChatRoom</h1>
+
+
+
+  {{> loginButtons}}
+
+     {{#if currentUser}}
+       <form class="new-task">
+         <input type="text" name="text" placeholder="Mesajlar buraya!" />
+       </form>
+     {{/if}}
+   </header>
+
+   <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
